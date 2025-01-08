@@ -1,18 +1,43 @@
-<h2 style="text-align: center;">Embeded Form Test Website</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Form Test</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;  
+      background-color: #f4f4f4; 
+    }
 
-<iframe
-  src="https://demo.astalty.com.au/form/9dea7872-5ba0-4b40-bd36-6857401bbbfe"
-  title="Astalty Form"
-  style="width: 100%; height:100%;"
-></iframe>
-
-<style>
     iframe {
       border: none;
+      width: 80vw; 
+      height: 80vh; 
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+      border-radius: 8px;
+    }
+
+    h2 {
+      position: absolute;
+      top: 20px;
+      text-align: center;
       width: 100%;
-      max-height: 80vh;
-      margin: auto; 
-      display: block; 
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
   </style>
-  
+</head>
+<body>
+  <h2>Embedded Form Test Website</h2>
+  <iframe
+    src="https://demo.astalty.com.au/form/9dea7872-5ba0-4b40-bd36-6857401bbbfe"
+    title="Astalty Form">
+  </iframe>
+</body>
+</html>
